@@ -18,9 +18,9 @@ def getDate(request):
     now = datetime.datetime.now()
     return HttpResponse(now)
 
-def calculateAge(request, year):
+def calculateAge(request, year,age):
     #return HttpResponse(year)
-    edadActual = 24
+    edadActual = age
     periodo = year-2019
     edadFutura = edadActual+periodo
     html = "<h2>En el año %s tendrás %s años</h2>" %(year,edadFutura)

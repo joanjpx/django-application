@@ -22,5 +22,5 @@ urlpatterns = [
     path('saludo/', saludo),
     path('despedida/',despedida),
     path('now/',getDate),
-    path('edad/<int:year>',calculateAge),
+    path('edad/<int:year>/<int:age>',calculateAge),
 ]
